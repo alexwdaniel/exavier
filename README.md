@@ -1,20 +1,31 @@
 # Exavier
 
-**TODO: Add description**
+An Elixir Slackbot example
 
-## Installation
+#### Setup
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Install Erlang and Elixir:
 
-  1. Add exavier to your list of dependencies in `mix.exs`:
+    $ brew install erlang
+    $ brew install elixir
 
-        def deps do
-          [{:exavier, "~> 0.0.1"}]
-        end
+Install project dependencies:
 
-  2. Ensure exavier is started before your application:
+    $ mix deps.get
 
-        def application do
-          [applications: [:exavier]]
-        end
+Set your `SLACK_API_TOKEN` environment variable
 
+Run with:
+
+    $ mix run --no-halt
+
+#### Tests
+
+To run ExUnit tests:
+
+    $ mix test
+
+#### Resources:
+  * [elixir-lang](http://elixir-lang.org/)
+  * [Elixir-Slack](https://github.com/BlakeWilliams/Elixir-Slack)
+  * [Slacker](https://github.com/koudelka/slacker)
